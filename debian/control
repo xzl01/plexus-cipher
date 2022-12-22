@@ -1,0 +1,28 @@
+Source: plexus-cipher
+Section: java
+Priority: optional
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders: Ludovic Claude <ludovic.claude@laposte.net>
+Build-Depends:
+ debhelper-compat (= 13),
+ default-jdk,
+ junit4,
+ libeclipse-sisu-maven-plugin-java,
+ libplexus-container-default1.5-java,
+ maven-debian-helper (>= 2.2)
+Standards-Version: 4.5.1
+Vcs-Git: https://salsa.debian.org/java-team/plexus-cipher.git
+Vcs-Browser: https://salsa.debian.org/java-team/plexus-cipher
+Homepage: https://github.com/codehaus-plexus/plexus-cipher
+
+Package: libplexus-cipher-java
+Architecture: all
+Depends: ${maven:Depends}, ${misc:Depends}
+Recommends: ${maven:OptionalDepends}
+Description: Plexus Cipher Component used by Maven
+ The Plexus project provides a full software stack for creating and
+ executing software projects. Based on the Plexus container, the applications
+ can utilise component-oriented programming to build modular, reusable
+ components that can easily be assembled and reused.
+ .
+ This package provides a cipher component for Plexus.

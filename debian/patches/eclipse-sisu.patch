@@ -1,0 +1,46 @@
+Description: Use eclipse-sisu instead of sonatype-sisu
+Author: Emmanuel Bourg <ebourg@apache.org>
+Forwarded: no
+--- a/src/test/java/org/sonatype/plexus/components/cipher/DefaultPlexusCipherTest.java
++++ b/src/test/java/org/sonatype/plexus/components/cipher/DefaultPlexusCipherTest.java
+@@ -12,7 +12,7 @@
+  */
+ package org.sonatype.plexus.components.cipher;
+ 
+-import org.sonatype.guice.bean.containers.InjectedTestCase;
++import org.eclipse.sisu.launch.InjectedTestCase;
+ 
+ /**
+  * Test the Plexus Cipher container
+--- a/src/test/java/org/sonatype/plexus/components/cipher/PBECipherTest.java
++++ b/src/test/java/org/sonatype/plexus/components/cipher/PBECipherTest.java
+@@ -19,7 +19,7 @@
+ 
+ package org.sonatype.plexus.components.cipher;
+ 
+-import org.sonatype.guice.bean.containers.InjectedTestCase;
++import org.eclipse.sisu.launch.InjectedTestCase;
+ 
+ /**
+  * @author Oleg Gusakov
+--- a/pom.xml
++++ b/pom.xml
+@@ -119,9 +119,15 @@
+ 
+   <dependencies>
+     <dependency>
+-      <groupId>org.sonatype.sisu</groupId>
+-      <artifactId>sisu-inject-bean</artifactId>
+-      <version>2.6.0</version>
++      <groupId>org.eclipse.sisu</groupId>
++      <artifactId>org.eclipse.sisu.inject</artifactId>
++      <version>debian</version>
++      <scope>provided</scope>
++    </dependency>
++    <dependency>
++      <groupId>com.google.inject</groupId>
++      <artifactId>guice</artifactId>
++      <version>debian</version>
+       <scope>provided</scope>
+     </dependency>
+     <dependency>

@@ -1,0 +1,117 @@
+plexus-cipher (1.8-2) unstable; urgency=medium
+
+  * Team upload.
+  * Depend on sisu-inject+guice instead of sisu-inject-bean
+  * Install a symlink to the jar at the old sonatype coordinates to help Gradle
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Wed, 10 Feb 2021 22:57:04 +0100
+
+plexus-cipher (1.8-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release
+    - Removed the patches (all fixed upstream)
+    - Build depend on junit4 instead of junit
+    - Relocate the old org.sonatype.plexus artifact to org.codehaus.plexus
+  * Fixed the build failure with OpenJDK 17 (Closes: #982350)
+  * Switch to eclipse-sisu-maven-plugin
+  * Track the new codehaus-plexus repository
+  * Removed the -java-doc package
+  * Standards-Version updated to 4.5.1
+  * Switch to debhelper level 13
+  * Use salsa.debian.org Vcs-* URLs
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Tue, 09 Feb 2021 10:41:29 +0100
+
+plexus-cipher (1.7-3) unstable; urgency=medium
+
+  * Team upload.
+  * Depend on libplexus-container-default1.5-java
+    instead of libplexus-container-default-java
+  * Removed the unused build dependency on libplexus-maven-plugin-java
+  * Removed the unused build dependency on junit
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Thu, 03 Aug 2017 15:19:46 +0200
+
+plexus-cipher (1.7-2) unstable; urgency=medium
+
+  * Team upload.
+  * Fixed the scope of the junit dependency in the pom
+  * Build with the DH sequencer instead of CDBS
+  * Standards-Version updated to 4.0.0
+  * Switch to debhelper level 10
+  * Use secure Vcs-* URLs
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Mon, 24 Jul 2017 01:42:41 +0200
+
+plexus-cipher (1.7-1) unstable; urgency=low
+
+  * Team upload.
+  * New upstream release
+    - Refreshed the patch
+    - Added a build dependency on libsisu-maven-plugin-java
+  * debian/control:
+    - Use canonical URLs for the Vcs-* fields
+    - Standard-Version updated to 3.9.6 (no changes)
+  * debian/watch: Updated the watched URL
+  * Moved the package to Git
+  * Switch to debhelper level 9
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Thu, 09 Jul 2015 12:30:55 +0200
+
+plexus-cipher (1.5-4) unstable; urgency=low
+
+  * Team upload.
+  * Add patch for test case that fails on fast systems.
+    - Thanks to Sjoerd Simons. (Closes: #697919)
+  * Remove Michael Koch from Uploaders. (Closes: #654125)
+  * Bump Standard-Version to 3.9.4 (no changes).
+
+ -- tony mancill <tmancill@debian.org>  Sat, 12 Jan 2013 17:58:41 +0000
+
+plexus-cipher (1.5-3) unstable; urgency=low
+
+  [ Miguel Landaeta ]
+  * Team upload.
+  * Install jars in /usr/share/java. (Closes: #687541).
+
+  [ tony mancill ]
+  * Bump Standard-Version to 3.9.3 (no changes).
+  * Update d/copyright.
+
+ -- Miguel Landaeta <miguel@miguel.cc>  Thu, 13 Sep 2012 20:13:09 -0430
+
+plexus-cipher (1.5-2) unstable; urgency=low
+
+  * Team upload.
+  * Update debian/watch.
+  * Update Homepage.
+  * Update Standards-Version: 3.9.1.
+  * Switch to source format 3.0.
+  * Use Maven to build package.
+  * Add a documentation package.
+
+ -- Torsten Werner <twerner@debian.org>  Thu, 25 Aug 2011 15:24:27 +0200
+
+plexus-cipher (1.5-1) unstable; urgency=low
+
+  * New upstream release.
+  * Updated debhelper to >= 7.
+  * Added myself to Uploaders.
+  * Updated Standards-Version to 3.8.3.
+
+ -- Michael Koch <konqueror@gmx.de>  Sun, 25 Oct 2009 21:41:19 +0100
+
+plexus-cipher (1.4-2) unstable; urgency=low
+
+  * Update copyright notice after reading NOTICE.txt
+  * Change Build-Depends to default-jdk as gcj is not used
+  * debian/rules: compile against plexus-container-default-alpha
+
+ -- Ludovic Claude <ludovic.claude@laposte.net>  Fri, 14 Aug 2009 10:57:49 +0100
+
+plexus-cipher (1.4-1) unstable; urgency=low
+
+  * Initial release. (Closes: #526588)
+
+ -- Ludovic Claude <ludovic.claude@laposte.net>  Sat, 02 May 2009 00:22:14 +0000

@@ -1,0 +1,2 @@
+version=4
+https://github.com/codehaus-plexus/plexus-cipher/tags .*/plexus-cipher-([\d\.]+).tar.gz
