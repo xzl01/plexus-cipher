@@ -1,3 +1,12 @@
+plexus-cipher (2.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release
+    - Removed the patches
+  * Standards-Version updated to 4.6.0.1
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Wed, 04 May 2022 01:31:06 +0200
+
 plexus-cipher (1.8-2) unstable; urgency=medium
 
   * Team upload.

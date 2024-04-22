@@ -10,7 +10,7 @@ Build-Depends:
  libeclipse-sisu-maven-plugin-java,
  libplexus-container-default1.5-java,
  maven-debian-helper (>= 2.2)
-Standards-Version: 4.5.1
+Standards-Version: 4.6.0.1
 Vcs-Git: https://salsa.debian.org/java-team/plexus-cipher.git
 Vcs-Browser: https://salsa.debian.org/java-team/plexus-cipher
 Homepage: https://github.com/codehaus-plexus/plexus-cipher
